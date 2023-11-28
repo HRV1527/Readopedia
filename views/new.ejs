@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <title>Readopedia</title>
+</head>
+<body>
+    <h1 class="new-book-heading">
+        NEW BOOK
+    </h1>
+    <div class="form">
+    <form action="/add" method="post">
+        <label for="name">Book name: </label><br>
+        <input type="text" name="name" required><br>
+        <label for="date">Read Date</label><br>
+        <input type="date" name="date" id="readdate" placeholder="YYYY-MM-DD" required pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"><br>
+        <label for="rating">Book Rating</label><br>
+        <input type="number" name="rating" id="rating" min="1" max="10">
+        <p>Summary</p>
+        <textarea id="summary" name="summary" rows="5" cols="33">
+        </textarea><br>
+        <label for="amazon">Amazon</label><br>
+        <input type="url" name="amazon" id="amazon"><br>
+        <label for="ISBN">Enter Book ISBN: </label><br>
+        <input type="text" name="ISBN" id="ISBN"><br>
+        <label for="author">Author name: </label><br>
+        <input type="text" name="author" id="author">
+        <p>Abstract</p>
+        <textarea name="abstract" id="abstract" cols="30" rows="10"></textarea>
+        <p>My Notes: </p>
+        <textarea name="myNotes" id="myNotes" cols="30" rows="10"></textarea><br>
+        <button type="submit">Add</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<%- include('partials/header.ejs'); -%>
+<div class="aboutMe">
+    <div class="creator">
+        <h1 class="myName">
+            HARSH VAGH
+        </h1>
+        <h2 class="read">
+            BOOKS I'VE READ.
+        </h2>
+    </div>
+    <img src="./images/image1.jpg" alt="A book and laptop on table." class="book">
+</div>
+<div class="box">
+    <% for (let book of books) {%>
+        <div class="card" style="width: 20rem;">
+          <a href="/review/?id=<%= book.id %>">
+            <img class="card-img-top" src="<%= book.image %>" alt="Card image cap" height="350px">
+          </a>
+            <div class="card-body">
+              <h5 class="card-title" style="color: #FFA3FD;"><u><%= book.name %></u></h5>
+              <p class="card-text"><%= book.summary %></p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" style="color: #FFC7C7;">Author: <%= book.author %></li>
+              <li class="list-group-item">Rating: <%= book.rating %>/10</li>
+            </ul>
+            <div class="card-body pt-1">
+              <a href="<%= book.url %>" class="card-link">Amazon</a>
+            </div>
+          </div>
+    <% } %>
+</div>
+<%- include('partials/footer.ejs'); -%>

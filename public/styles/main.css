@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Exo+2:wght@300&family=Inter:wght@400;600;700&family=Playfair+Display&display=swap');
+
+body{
+    background-color: #191825;
+    height: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    color: #865DFF;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0.5rem;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.nav-items a{
+    text-decoration: none;
+    color: #865DFF;
+}
+
+.nav-links a:hover{
+    color: #FFE4D6;
+}
+
+.title{
+    flex: 2;
+}
+
+/* Gradient button */
+         
+         
+.btn-grad {
+    background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
+    /* margin: 10px; */
+    margin: 0 10px 10px 10px;
+    padding: 10px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+
+/* Creator Intro Section */
+
+.aboutMe{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1rem;
+    color: #E384FF;
+}
+
+.myName{
+    font-size: 4.5rem;
+    margin-bottom: 0;
+}
+
+.book{
+    height: 22rem;
+    width: 45rem;
+    border-bottom-left-radius: 25px;
+}
+
+/* Cards */
+
+.box{
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0.5rem;
+    flex-wrap: wrap;
+}
+
+.card , .list-group>li{
+    background-color: #232D3F;
+    color: whitesmoke;
+}
+
+/* Review Page */
+.aboutMe-review{
+    font-family: Playfair Display;
+    font-size: 5rem;
+    color: #E384FF;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.bookInfo{
+    display: flex;
+    margin-left: 1rem;
+    /* align-items: center; */
+    gap: 20px;
+}
+
+.book-details{
+    background-color: aliceblue;
+    padding: 0 50px 50px 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.booktitle{
+    font-family: Playfair Display;
+    font-size: 2rem;
+    color: #D0A2F7;
+}
+
+.detail-item{
+    font-family: Exo 2;
+    font-size: 1.2rem;
+    color: #3E001F;
+}
+
+.review-img{
+    height: 300px;
+}
+
+/* Notes Section */
+
+.myNotes, .abstract-h2{
+    font-size: 3rem;
+    color: #E384FF;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.notes-data, .abstract-data{
+    color: white !important;
+    font-size: 1.3rem !important;
+    max-width: 80% !important;
+    margin-left: 1rem;
+}
+
+/* New Book Form */
+
+.new-book-heading{
+    color: #FBECB2;
+    margin-left: auto;
+    text-align: center;
+}
+
+.form{
+    width: 50%;
+    margin: auto;
+}
+
+form{
+    color: #FFBF9B;
+    display: grid;
+    font-size: 1.2rem;
+    grid-template-columns: 2fr;
+    border: 2px solid whitesmoke;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+input[type=text],input[type=date],input[type=number],input[type=url]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+input[type=date]{
+    width: 50%;
+}
+
+button[type=submit] {
+    width: 100%;
+    /* background-color: #4CAF50; */
+    background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }

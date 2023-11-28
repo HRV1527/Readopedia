@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
+    <title>Readopedia</title>
+</head>
+<body>
+    <h1 class="aboutMe-review">
+        HARSH VAGH
+    </h1>
+    <div class="bookInfo">
+        <img src="<%= image %>" alt="Book cover" class="review-img">
+        <div class="book-details">
+            <h2 class="booktitle"><%= book[0].name %> - BY <%= book[0].author %></h2>
+            <p class="detail-item">ISBN: <%= book[0].bookid %></p>
+            <p class="detail-item">DATE READ: <%= book[0].to_char.toUpperCase() %></p>
+            <p class="detail-item">HOW STRONGLY I RECOMMEND IT: <%= book[0].rating %>/10</p>
+        </div>
+    </div>
+    <div class="abstract">
+        <h2 class="abstract-h2">
+            Abstract
+        </h2>
+        <p class="abstract-data">
+            <%= book[0].abstract %>
+        </p>
+    </div>
+    <div class="notes">
+        <h2 class="myNotes">
+            My Notes
+        </h2>
+        <p class="notes-data" style="white-space: pre-line">
+            <%= book[0].notes %>
+        </p>
+    </div>
+</body>
+</html>
